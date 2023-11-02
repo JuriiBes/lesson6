@@ -71,7 +71,7 @@ export default {
                         })
                     })
                 }
-                if (this.cardNumberModifiers.separate4Digits) {
+                if (this.cardDateExpiryModifiers.separate2Digits) {
                     newVal = newVal.replace(/(\d{2}(?=.+))/g, '$1/')
                 }
                 this.$emit('update:cardDateExpiry', newVal)

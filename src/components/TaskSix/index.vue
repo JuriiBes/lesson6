@@ -5,11 +5,8 @@
     </div>
     <card-input
         v-model:cardNumber.digitsOnly.separate4Digits="numberCard"
-        v-model:cardDateExpiry.digitsOnly.separate4Digits="dateExpiryCard"
+        v-model:cardDateExpiry.digitsOnly.separate2Digits="dateExpiryCard"
     />
-
-    <div>CARD NUMBER: {{ numberCard }}</div>
-    <div>EXPIRY DATE: {{ dateExpiryCard }}</div>
 </template>
 
 <script>
